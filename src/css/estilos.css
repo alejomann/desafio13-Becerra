@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+body {margin: 0; padding: 0; font-family: 'Lato', sans-serif;}
+
+header h1 { font-weight: 700; font-size: 30px; }
+header a { text-decoration: none !important;}
+nav ul { list-style: none; }
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    -moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;
+    border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
+}
+nav ul li a:hover { background-color: #FFF; color: #000 !important;} 
+
+nav .contProfile .login {  background-color: #FFF;  text-decoration: none; color: #000;
+    -moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;
+    border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;}
+nav .contProfile .login:hover { background-color: #000;}
+nav .contProfile .login:hover small { color: #FFF !important;}
+
+nav .contCarrito { background-color: #444; box-sizing: border-box; cursor: pointer; padding: 10px 15px !important;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
+    -moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+nav .contCarrito:hover { background-color: #000;}
+nav .contCarrito small { color: #FFF; font-size: 13px;}
+
+
+
+main { padding: 50px;}
+
+
+.grillaProductos { padding: 0 !important;}
+.grillaProductos .listado { display: flex; width: 100%; margin-top: 30px; flex-wrap: wrap;}
+.grillaProductos .listado img {height: 200px;
+    width: auto !important;
+    object-fit: contain;}
+.grillaProductos .card { width: 300px; margin: 10px; text-align: center; text-decoration: none !important; color: #333 !important; box-sizing: border-box;
+    -moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+    .grillaProductos .card span { text-transform: uppercase; letter-spacing: 2px; font-size: 10px; color: #444; display: block; margin-top: 25px; margin-bottom: 6px;}
+.grillaProductos .card .price { font-size: 25px; line-height: 32px; font-weight: 700; color: rgb(10, 37, 156);}
+.grillaProductos .card:hover { border: 1px solid #999;}
+.grillaProductos .card-title { font-size: 16px; line-height: 22px; font-weight: 300;}
+.grillaProductos .card .descripcion { min-height: 60px; opacity: 0.6;
+    -moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.grillaProductos .card:hover .descripcion { opacity: 1;}
+
+.contSumaResta { width: 100%; margin: auto; height: auto; display: flex; align-items: center; justify-content: space-between; border: 1px solid #CCC; box-sizing: border-box; padding: 3px;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
+}
+.contSumaResta button { background-color: transparent; border: none; margin: 0; padding: 4px; width: 45px !important; font-size: 24px; color: rgb(21, 46, 185); cursor: pointer;
+    -moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;}
+.contSumaResta button:hover { background-color: #EEE;}
+.contSumaResta input { margin: 0; padding: 0px; width: 120px; text-align: center; color: #444; font-size: 16px; line-height: 28px; background: transparent; border: none;}
+
+.contadorProductos .btnAgregar { width: 100%; margin: auto; display: block; text-transform: uppercase; padding: 12px 0px;}
+
+#cargando img { height: 40px; margin: 20px;}
+#cargando2 img { height: 40px; margin: 20px;}
+.loadingEnd { display: none;}
+
+
+
+
+
+
+.contDetalle { width: 100%; height: auto; max-width: 1400px;  margin: auto; display: flex; align-items: flex-start; box-sizing: border-box; padding: 40px;}
+.contDetalle .contFoto { width: 50%;}
+.contDetalle .contData { width: 50%; box-sizing: border-box; padding-left: 50px;}
+.contDetalle .contData .titulo { font-size: 30px; line-height: 40px; margin-bottom: 10px;}
+.contDetalle .contData .descripcion { margin-bottom: 20px;}
+.contDetalle .contData .price { font-weight: bold; font-size: 26px; line-height: 34px; color: rgb(10, 37, 156);}
+.contDetalle .contData span { text-transform: uppercase; letter-spacing: 2px; font-size: 13px; color: #444; display: block; margin-top: 25px; margin-bottom: 6px;}
+
+
+.contadorProductos { max-width: 200px; margin-top: 30px;}
+
+
+
+
+.titular { font-size: 30px; line-height: 40px; width: 90%; max-width: 1400px; margin:auto; margin-bottom: 20px; padding-left: 40px;}
+
+.carrito { width: 90%; max-width: 1400px; margin:auto}
+.carrito li { width: 100%; display: flex; align-items: stretch; justify-content: space-between; border-bottom: 1px solid #CCC; box-sizing: border-box; padding: 10px 0px; text-align: left;}
+.carrito li img { width: 160px; height: 200px; object-fit:contain; margin-right: 10px;  overflow: hidden; box-sizing: border-box;}
+.carrito li .info {  flex-grow: 1; box-sizing: border-box; padding-left: 30px; align-items: center; display: flex; width: 80%;}
+.carrito li .info h4 { font-size: 22px; line-height: 30px;}
+.carrito li .precio { width: 20%;align-items: center; justify-content: center;}
+.carrito li .precio p { font-size: 16px; line-height: 26px; font-weight: bold; color: #777;}
+.carrito li .total { width: 20%;align-items: center; justify-content: center;}
+.carrito li .total p { font-size: 19px; line-height: 26px; font-weight: bold; color: #222;}
+.carrito li .borrar { width: 30px; display: flex; align-items: center; justify-content: center;}
+.carrito li .borrar button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgb(227 119 119);
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #FFF;
+    border-radius: 4px ;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -o-border-radius: 4px ;
+}
+.carrito li .borrar button:hover {     background-color: rgb(196, 2, 2);}
+.carrito li p { margin: 0 !important;}
+
+
+.carrito .barratotal { display: flex;  justify-content: end; margin-top: 25px; margin-bottom: 10px;}
+.carrito .barratotal p { font-size: 26px; line-height: 35px; font-weight: 400;color: #666; }
+.carrito .barratotal p b{ font-weight: bold;color: #222;font-size: 28px; line-height: 35px; }
+
+.carrito .vaciar {display: flex;  justify-content: end; border: none;}
